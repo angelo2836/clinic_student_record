@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: white;
+
+    /* Gradient sky background */
+    background: linear-gradient(180deg, #3b1c71, #7d3cff, #ff8a5c);
+}
+
+.boxalert{
+
+    position: fixed;
+    margin-top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 80%;
+    max-width: 500px;
+
+    z-index: 9;
+
+
+}
+
+.box-login{
+    display: flex;
+    justify-content: center;
+    /* Always Center */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+}
+
+/* Glass container */
+.container {
+    width: 400px;
+    padding: 40px 30px;
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Input group */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-box input {
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(255,255,255,0.1);
+    color: white;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+/* Placeholder hidden */
+.input-box input::placeholder {
+    color: transparent;
+}
+
+/* Label */
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+    font-size: 13px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Floating effect */
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -8px;
+    font-size: 11px;
+    color: #fff;
+    background: transparent;
+}
+
+/* Icons */
+.input-box span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+}
+
+/* Focus glow */
+.input-box input:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Options row */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    color: #333;
+    background: white;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px white;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Register text */
+.register {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.register a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
